@@ -59,7 +59,6 @@ document.querySelector('.login').addEventListener('submit', e => {
 
 	document.querySelector('.card__wrapper').appendChild(cardEl)
 
-	// Clear input fields
 	document.querySelector('.fname').value = ''
 	document.querySelector('.lname').value = ''
 	document.querySelector('.age').value = ''
@@ -92,3 +91,5 @@ function loadUsers() {
 		document.querySelector('.card__wrapper').appendChild(cardEl)
 	})
 }
+
+if (user.length > 0) loadUsers()
