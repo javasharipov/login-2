@@ -1,6 +1,6 @@
 // console.log('start')
 
-let user = JSON.parse(localStorage.getItem('user')) || []
+let user = JSON.parse(localStorage.getItem('u')) || []
 
 const popUpEl = document.querySelector('.login__form')
 
@@ -38,7 +38,7 @@ document.querySelector('.login').addEventListener('submit', e => {
 	}
 
 	user.push(newUser)
-	localStorage.setItem('user', JSON.stringify(user))
+	localStorage.setItem('u', JSON.stringify(u))
 
 	const cardEl = document.createElement('div')
 	cardEl.classList.add('card')
