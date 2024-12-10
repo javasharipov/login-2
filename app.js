@@ -1,5 +1,3 @@
-// console.log('start')
-
 let user = JSON.parse(localStorage.getItem('user')) || []
 
 const popUpEl = document.querySelector('.login__form')
